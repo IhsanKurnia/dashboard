@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF0F1"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorUngu"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/radius_oval"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_box"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/radius_box">
+
+        <ImageView
+            android:id="@+id/iv_holiday"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/travel"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_box"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtholiday"
+            android:layout_toEndOf="@id/iv_holiday"
+            android:layout_toRightOf="@id/iv_holiday"
+            android:textColor="@color/colorUngu"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@id/tv_sini"
+            android:layout_below="@+id/tv_title_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/klik_disini"
+            android:layout_toEndOf="@+id/iv_holiday"
+            android:layout_toRightOf="@+id/iv_holiday"
+            android:textColor="@color/colorUngu"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_sini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diskon_hingga_50"
+            android:layout_toEndOf="@+id/iv_holiday"
+            android:layout_toRightOf="@+id/iv_holiday"
+            />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        tools:listitem="@layout/item_dashboard"
+        />
+
+
+</RelativeLayout>

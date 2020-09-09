@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">dashboard</string>
+    <string name="txtholiday">Paket Liburan Murah</string>
+    <string name="klik_disini">Klik Disini</string>
+    <string name="diskon_hingga_50">Diskon Hingga 50%</string>
+    <string name="paket_data">Paket Data</string>
+</resources>
